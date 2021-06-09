@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "artasce-website"
+  },
+  "targets": {
+    "artasce-website": {
+      "hosting": {
+        "artascecreative": [
+          "artascecreative"
+        ]
+      }
+    }
+  }
+}

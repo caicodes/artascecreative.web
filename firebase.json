@@ -1,0 +1,14 @@
+{
+  "hosting": [
+    {
+      "target": "artascecreative",
+      "public": "dist",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

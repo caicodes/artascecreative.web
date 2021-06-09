@@ -1,4 +1,4 @@
-# chakra-themes-starter
+# artascecreative web app
 
 ## Project setup
 ```

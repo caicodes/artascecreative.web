@@ -8,9 +8,7 @@
       flex-dir="column"
       justify-content="top"
     >
-      <CHeading textAlign="center" mb="4"
-        >⚡️ chakra-ui/vue-cli themes starter</CHeading
-      >
+      <CHeading textAlign="center" mb="4">artascecreative</CHeading>
       <CFlex justify="center" direction="column" align="center">
         <CBox mb="3">
           <CIconButton
