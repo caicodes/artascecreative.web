@@ -4,14 +4,23 @@ import { db } from '../firebase'
 import { collection, getDocs } from "firebase/firestore";
 
 
+const todos = ref([])
 
 // get invoices (or whatever)
 onMounted(async () => {
-  const querySnapshot = await getDocs(collection(db, "invoices"));
+  const querySnapshot = await getDocs(collection(db, "todos"));
+  let fbTodos = []
   querySnapshot.forEach((doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    console.log(doc.id, " => ", doc.data());
-  });
+    console.log(doc.id, " => ", doc.data())
+    const todo = {
+      id: doc.data().id,
+      content: doc.data().content,
+      done: doc.data().done
+    }
+    fbTodos.push(todo)
+  })
+  todos.value = fbTodos
+
 })
 
 
@@ -30,6 +39,9 @@ const count = ref(0)
   <h3>Firebase Project Integration</h3>
   <h4>From Firestore: </h4>
 
+  <div v-for="todo in todos">
+    <p>Todo:{{ todo.id }} {{ todo.content }} {{ todo.done }} </p>
+  </div>
 
   <p>
     Recommended IDE setup:
