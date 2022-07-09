@@ -1,10 +1,32 @@
 # Artasce Website AC Site
 
+Vite + Vue 3 + Firebase + Vue Router 
 
+The current theme integration task list...
+
+  - [ ] GET DESIGN TOKENS IMPLEMENTED
+  - [ ] CREATE XD DESIGN SYSTEM 
+  - [ ] EXPLORE INTEGRATIONS ACROSS PLATFORMS/FRAMEWORKS
+
+
+Mobile App Login Screen -
+
+ <img src="./assets/project/app-login-sm.png" width="350" />
+
+----------
+
+Web Application in the Artasce Website system/project...
+
+Mobile App Login Currently:
+
+<img src="./assets/project/app-login-iphone.png" width="20%" />
+
+Current AC-sattelite site (artascecreative.web) - needs to share standard assets and design tokens...
 
 <img src="./assets/project/screen-large.png" width="70%" /> <img src="./assets/project/screen-small.png" width="20%" />
 
 
+Live Demo:
 https://artascecreative.web.app
 
 ## Firebase Integration
@@ -16,14 +38,21 @@ Current Integration Includes:
     - target name is ``ac-site``
 - Firebase firestore 
   - read only
+  - App.vue display 
+- Firebase db File
+  - Setup .env with Vite (import.meta.env.VITE_*)
+  - /firebase/index.js exports db
 
-- App.vue display coming soon...
-- View console to see collection objects... connected
-- Added firebase db
-- Setup .env with Vite
-  - import.meta.env.VITE_*
+## Vue router
 
+Added vue-router@latest... added Nav component, added routes...
 
+```
+
+// routes 
+routes/index.js
+
+```
 
 #### /firebase.json
 
@@ -61,10 +90,32 @@ Current Integration Includes:
 
 First sprint is to establish a read connection to firebase project, use .env for config, show firestore data... Upon that, organize and encapsulate minimal setup structure before specific customizations and use this as a seed/template for the Artasce Website System sattelite sites with VUE 3 + Vite + Firebase
 
-#### Current Package is lean... 
+#### Current Package is still lean
 
-<img src="./assets/project/package-json.png" alt="" width="300"/>
+```
 
+{
+  "name": "artascecreative",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^9.9.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  }
+}
+
+
+```
 
 ###
 

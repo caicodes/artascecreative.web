@@ -1,18 +1,19 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import Nav from './components/Nav.vue'
 import Welcome from './components/Welcome.vue'
 </script>
 
 <template>
-  <Welcome msgTitle= "Welcome!" msg="Artasce Creative Site with Vue 3 + Vite" />
+  <Welcome msgTitle="Welcome!" msg="Artasce Creative Site with Vue 3 + Vite" />
+  <Nav />
+  <router-view />
+
 </template>
 
 <style>
-
 :root {
-  background-color: #61198D; 
-  color:rgba(255, 255, 255, 0.54);
+  background-color: #61198D;
+  color: rgba(255, 255, 255, 0.54);
 }
 
 :root a {
@@ -24,10 +25,25 @@ import Welcome from './components/Welcome.vue'
   border: none;
   border-radius: .5rem;
   font-size: 1.2rem;
-  background-color:rgba(255, 255, 255, 0.54);
+  background-color: rgba(255, 255, 255, 0.54);
   color: #61198D;
   text-transform: uppercase;
 }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  background-color: #61198D;
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  padding: 2rem;
+  
+}
+
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -39,6 +55,4 @@ import Welcome from './components/Welcome.vue'
   background-color: #9C27B0;
   border-radius: 1rem;
 }
-
-
 </style>
