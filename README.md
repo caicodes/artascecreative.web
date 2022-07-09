@@ -2,6 +2,19 @@
 
 Vite + Vue 3 + Firebase + Vue Router 
 
+The current theme integration task list...
+
+  - [ ] GET DESIGN TOKENS IMPLEMENTED
+  - [ ] CREATE XD DESIGN SYSTEM 
+  - [ ] EXPLORE INTEGRATIONS ACROSS PLATFORMS/FRAMEWORKS
+
+
+Mobile App Login Screen -
+
+ <img src="./assets/project/app-login-sm.png" width="350" />
+
+----------
+
 Web Application in the Artasce Website system/project...
 
 Mobile App Login Currently:
