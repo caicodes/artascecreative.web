@@ -2,6 +2,16 @@
 
 Vite + Vue 3 + Firebase + Vue Router 
 
+Mobile App Login Screen -
+
+ <img src="./assets/project/app-login-sm.png" width="350" />
+
+  - [ ] GET DESIGN TOKENS IMPLEMENTED
+  - [ ] CREATE XD DESIGN SYSTEM 
+  - [ ] EXPLORE INTEGRATIONS ACROSS PLATFORMS/FRAMEWORKS
+
+----------
+
 Web Application in the Artasce Website system/project...
 
 <img src="./assets/project/screen-large.png" width="70%" /> <img src="./assets/project/screen-small.png" width="20%" />
