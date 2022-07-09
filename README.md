@@ -1,5 +1,10 @@
 # Artasce Website AC Site
 
+
+
+<img src="./assets/project/screen-large.png" width="70%" /> <img src="./assets/project/screen-small.png" width="20%" />
+
+
 https://artascecreative.web.app
 
 ## Firebase Integration
@@ -13,6 +18,12 @@ Current Integration Includes:
   - read only
 
 - App.vue display coming soon...
+- View console to see collection objects... connected
+- Added firebase db
+- Setup .env with Vite
+  - import.meta.env.VITE_*
+
+
 
 #### /firebase.json
 
