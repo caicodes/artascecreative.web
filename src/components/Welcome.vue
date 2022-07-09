@@ -4,9 +4,7 @@ import { db } from '../firebase'
 import { collection, getDocs } from "firebase/firestore";
 
 
-const todos = ref([])
-
-// get invoices (or whatever)
+// get todos (or whatever)
 onMounted(async () => {
   const querySnapshot = await getDocs(collection(db, "todos"));
   let fbTodos = []
@@ -20,7 +18,6 @@ onMounted(async () => {
     fbTodos.push(todo)
   })
   todos.value = fbTodos
-
 })
 
 
@@ -30,13 +27,14 @@ defineProps({
 })
 
 const count = ref(0)
+const todos = ref([])
+
 </script>
 
 <template>
   <h1>{{ msgTitle }}</h1>
   <h2>{{ msg }}</h2>
 
-  <h3>Firebase Project Integration</h3>
   <h4>From Firestore: </h4>
 
   <div v-for="todo in todos">
@@ -64,9 +62,3 @@ const count = ref(0)
     <code>components/Welcome.vue</code> to test hot module replacement.
   </p>
 </template>
-
-<style scoped>
-a {
-  color: #42b983;
-}
-</style>

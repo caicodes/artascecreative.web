@@ -1,5 +1,10 @@
 # Artasce Website AC Site
 
+
+
+<img src="./assets/project/screen-large.png" width="70%" /> <img src="./assets/project/screen-small.png" width="20%" />
+
+
 https://artascecreative.web.app
 
 ## Firebase Integration
