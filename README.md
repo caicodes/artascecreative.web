@@ -2,13 +2,16 @@
 
 Vite + Vue 3 + Firebase + Vue Router 
 
-Mobile App Login Screen -
-
- <img src="./assets/project/app-login-sm.png" width="350" />
+The current theme integration task list...
 
   - [ ] GET DESIGN TOKENS IMPLEMENTED
   - [ ] CREATE XD DESIGN SYSTEM 
   - [ ] EXPLORE INTEGRATIONS ACROSS PLATFORMS/FRAMEWORKS
+
+
+Mobile App Login Screen -
+
+ <img src="./assets/project/app-login-sm.png" width="350" />
 
 ----------
 
