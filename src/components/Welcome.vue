@@ -13,6 +13,10 @@ const count = ref(0)
   <h1>{{ msgTitle }}</h1>
   <h2>{{ msg }}</h2>
 
+<h3>Firebase Project Integration</h3>
+<h4>From Firestore: </h4>
+
+
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>

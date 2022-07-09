@@ -1,7 +1,10 @@
 # Artasce Website AC Site
 
 https://artascecreative.web.app
-https://artascecreative.firebasepp.com
+
+## Firebase Integration
+
+First, establish a read connection to firebase project, use .env for config, show firestore data...
 
 ### Vue 3 + Vite
 
@@ -10,3 +13,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
