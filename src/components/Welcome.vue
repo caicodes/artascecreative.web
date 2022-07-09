@@ -1,5 +1,19 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { db } from '../firebase'
+import { collection, getDocs } from "firebase/firestore";
+
+
+
+// get invoices (or whatever)
+onMounted(async () => {
+  const querySnapshot = await getDocs(collection(db, "invoices"));
+  querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data());
+  });
+})
+
 
 defineProps({
   msg: String,
@@ -13,8 +27,8 @@ const count = ref(0)
   <h1>{{ msgTitle }}</h1>
   <h2>{{ msg }}</h2>
 
-<h3>Firebase Project Integration</h3>
-<h4>From Firestore: </h4>
+  <h3>Firebase Project Integration</h3>
+  <h4>From Firestore: </h4>
 
 
   <p>
