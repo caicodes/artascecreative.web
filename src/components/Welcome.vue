@@ -13,7 +13,7 @@ onMounted(async () => {
   querySnapshot.forEach((doc) => {
     console.log(doc.id, " => ", doc.data())
     const todo = {
-      id: doc.data().id,
+      id: doc.id,
       content: doc.data().content,
       done: doc.data().done
     }
@@ -40,7 +40,7 @@ const count = ref(0)
   <h4>From Firestore: </h4>
 
   <div v-for="todo in todos">
-    <p>Todo:{{ todo.id }} {{ todo.content }} {{ todo.done }} </p>
+    <p>ID: {{ todo.id }} content: {{ todo.content }} done: {{ todo.done }} </p>
   </div>
 
   <p>
