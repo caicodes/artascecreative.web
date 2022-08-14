@@ -2,6 +2,32 @@
 
 Vite + Vue 3 + Firebase + Vue Router 
 
+
+## Theme Integration 
+
+Goals include the maximum flex... theme and color mode options... darkmode/system, themeable design system. Also, the ability to merge design tokens accross platforms/frameworks AND implementations such as tailwind, css-in-js, daisy-ui, styled components, vanilla, etc...
+
+Getting a design system model to follow is a current research task, with all of the above in mind, key elements include the design tokens, single source of truth, remote config, resource sharing, version control, cdn and other assets to share/publish/sync.
+
+The current theme integration task list...
+
+  - [ ] DARK MODE / COLOR SCHEME
+  - [ ] CSS VARIABLES, TOKEN NAMING
+  - [ ] GET DESIGN TOKENS IMPLEMENTED
+    - [ ] research
+    - [ ] list of formats
+    - [ ] XD / ID / Online / Styleguide
+  - [ ] CREATE XD DESIGN SYSTEM 
+  - [ ] Consider location/site/maintainence
+  - [ ] EXPLORE INTEGRATIONS ACROSS PLATFORMS/FRAMEWORKS
+
+
+Mobile App Login Screen -
+
+ <img src="./assets/project/app-login-sm.png" width="350" />
+
+----------
+
 Web Application in the Artasce Website system/project...
 
 <img src="./assets/project/screen-large.png" width="70%" /> <img src="./assets/project/screen-small.png" width="20%" />
